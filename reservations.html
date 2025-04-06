@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve a table at LightWeight Restaurant for an unforgettable dining experience.">
+    <meta name="keywords" content="restaurant reservations, book table, fine dining, LightWeight booking">
+    <meta name="author" content="LightWeight Restaurant">
+    <title>LightWeight Restaurant | Reservations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Light<span>Weight</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html" class="active">Reservations</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reservations Hero -->
+    <section class="reservations-hero">
+        <div class="container">
+            <h1>Reserve Your Table</h1>
+            <p>Experience culinary excellence in our inviting atmosphere</p>
+        </div>
+    </section>
+
+    <!-- Reservation Process -->
+    <section class="reservation-process">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Date & Time</h3>
+                    <p>Select your preferred dining time from our available slots.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Select Your Party Size</h3>
+                    <p>Let us know how many people will be joining you.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Customize Your Experience</h3>
+                    <p>Pre-order dishes or request special arrangements.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Confirm Your Reservation</h3>
+                    <p>Receive instant confirmation and reminders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-form-section">
+        <div class="container">
+            <div class="reservation-form-container">
+                <div class="form-header">
+                    <h2>Make a Reservation</h2>
+                    <p>All fields are required unless noted</p>
+                </div>
+                <form id="reservation-form" action="https://formspree.io/f/mrbpopkn" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select Number</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                            <option value="9">9+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests (Optional)</label>
+                        <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                    </div>
+
+                    <!-- Menu Selection -->
+                    <div class="menu-selection">
+                        <h3>Pre-Order From Our Menu (Optional)</h3>
+                        <div class="menu-categories">
+                            <div class="menu-category">
+                                <h4>Starters</h4>
+                                <div class="menu-item-select">
+                                    <input type="checkbox" id="starter1" name="menu-items" value="Bruschetta Trio - $12" data-price="12">
+                                    <label for="starter1">Bruschetta Trio - $12</label>
+                                    <input type="number" min="0" max="10" value="0" class="item-quantity" data-item="starter1">
+                                </div>
+                                <div class="menu-item-select">
+                                    <input type="checkbox" id="starter2" name="menu-items" value="Crispy Calamari - $14" data-price="14">
+                                    <label for="starter2">Crispy Calamari - $14</label>
+                                    <input type="number" min="0" max="10" value="0" class="item-quantity" data-item="starter2">
+                                </div>
+                            </div>
+                            <div class="menu-category">
+                                <h4>Main Courses</h4>
+                                <div class="menu-item-select">
+                                    <input type="checkbox" id="main1" name="menu-items" value="Grilled Salmon - $28" data-price="28">
+                                    <label for="main1">Grilled Salmon - $28</label>
+                                    <input type="number" min="0" max="10" value="0" class="item-quantity" data-item="main1">
+                                </div>
+                                <div class="menu-item-select">
+                                    <input type="checkbox" id="main2" name="menu-items" value="Beef Tenderloin - $34" data-price="34">
+                                    <label for="main2">Beef Tenderloin - $34</label>
+                                    <input type="number" min="0" max="10" value="0" class="item-quantity" data-item="main2">
+                                </div>
+                            </div>
+                            <div class="menu-category">
+                                <h4>Desserts</h4>
+                                <div class="menu-item-select">
+                                    <input type="checkbox" id="dessert1" name="menu-items" value="Chocolate Fondant - $10" data-price="10">
+                                    <label for="dessert1">Chocolate Fondant - $10</label>
+                                    <input type="number" min="0" max="10" value="0" class="item-quantity" data-item="dessert1">
+                                </div>
+                                <div class="menu-item-select">
+                                    <input type="checkbox" id="dessert2" name="menu-items" value="Crème Brûlée - $9" data-price="9">
+                                    <label for="dessert2">Crème Brûlée - $9</label>
+                                    <input type="number" min="0" max="10" value="0" class="item-quantity" data-item="dessert2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <h3>Your Order Summary</h3>
+                        <div class="selected-items">
+                            <!-- Items will be added here dynamically -->
+                        </div>
+                        <div class="order-total">
+                            <span>Estimated Total:</span>
+                            <span class="total-amount">$0</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">terms and conditions</a> and <a href="#">cancellation policy</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Complete Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Benefits -->
+    <section class="reservation-benefits">
+        <div class="container">
+            <h2>Why Reserve With Us</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Priority Seating</h3>
+                    <p>Guaranteed best tables when you book in advance</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-gift"></i>
+                    <h3>Exclusive Offers</h3>
+                    <p>Special discounts and complimentary items for reservations</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Time Savings</h3>
+                    <p>Skip the wait and be seated immediately upon arrival</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Personalized Service</h3>
+                    <p>Our staff prepares for your arrival and preferences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254799250399" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>LightWeight Assistant</h3>
+            <button class="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Need help with your reservation?">
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>LightWeight</h3>
+                    <p>Culinary excellence meets comfort in our modern, inviting restaurant. We're committed to providing unforgettable dining experiences.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 11:00 AM - 11:00 PM</li>
+                        <li>Saturday: 10:00 AM - 12:00 AM</li>
+                        <li>Sunday: 10:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on special offers and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LightWeight Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/reservation.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

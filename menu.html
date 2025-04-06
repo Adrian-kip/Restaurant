@@ -3,409 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Lumière's exquisite seasonal menu - a symphony of flavors crafted by Chef Marco. Featuring locally-sourced ingredients and innovative presentations.">
-    <meta name="keywords" content="restaurant menu, fine dining menu, tasting menu, chef's specials, wine pairing, gourmet dishes">
-    <meta name="author" content="Lumière Restaurant">
-    <meta property="og:title" content="Menu | Lumière Fine Dining">
-    <meta property="og:description" content="Explore our seasonal tasting menus and à la carte offerings at Lumière.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.lumiere-restaurant.com/menu">
-    <meta property="og:image" content="https://www.lumiere-restaurant.com/images/menu-bg.jpg">
-    <title>Menu | Lumière Fine Dining</title>
+    <meta name="description" content="LightWeight Restaurant Menu - Explore our gourmet dishes crafted with locally-sourced ingredients.">
+    <meta name="keywords" content="restaurant menu, fine dining, gourmet food, LightWeight menu">
+    <meta name="author" content="LightWeight Restaurant">
+    <title>LightWeight Restaurant | Our Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">Lumière</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="menu.html" class="active">Menu</a>
-                <a href="bookings.html">Reservations</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Menu Hero Section -->
-    <header class="menu-hero">
-        <div class="menu-overlay"></div>
-        <div class="menu-content">
-            <h1>Seasonal <span>Menu</span></h1>
-            <p>Our dishes evolve with the seasons, showcasing the finest local ingredients at their peak.</p>
+            <nav class="navbar">
+                <a href="index.html" class="logo">Light<span>Weight</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
 
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Crafted with passion, served with perfection</p>
+        </div>
+    </section>
+
     <!-- Menu Navigation -->
-    <section class="menu-navigation">
+    <section class="menu-nav">
         <div class="container">
-            <div class="menu-tabs">
-                <button class="menu-tab active" data-tab="tasting">Tasting Menu</button>
-                <button class="menu-tab" data-tab="a-la-carte">À La Carte</button>
-                <button class="menu-tab" data-tab="wine">Wine Pairing</button>
-                <button class="menu-tab" data-tab="dessert">Desserts</button>
-            </div>
+            <ul>
+                <li><a href="#starters" class="active">Starters</a></li>
+                <li><a href="#mains">Main Courses</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#wines">Wine List</a></li>
+            </ul>
         </div>
     </section>
 
-    <!-- Tasting Menu Section -->
-    <section id="tasting" class="menu-section active">
+    <!-- Starters Section -->
+    <section class="menu-section" id="starters">
         <div class="container">
-            <div class="menu-intro">
-                <h2>Chef's Tasting <span>Experience</span></h2>
-                <p>$185 per person | $275 with wine pairing</p>
-                <p>An immersive journey through Chef Marco's culinary vision. 8-10 courses showcasing seasonal highlights.</p>
-                <div class="menu-notice">
-                    <i class="fas fa-info-circle"></i>
-                    <p>The entire table must participate in the tasting menu. Please inform us of any dietary restrictions when booking.</p>
-                </div>
-            </div>
-            
-            <div class="menu-courses">
-                <div class="course">
-                    <h3>Amuse-Bouche</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Forest Mushroom Tea</div>
-                        <div class="item-desc">Wild foraged mushrooms, truffle foam, rye crouton</div>
+            <h2>Starters</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Bruschetta Trio</h3>
+                        <p>Toasted bread with tomato & basil, mushroom & thyme, and roasted pepper toppings</p>
                     </div>
+                    <span class="item-price">$12</span>
                 </div>
-                
-                <div class="course">
-                    <h3>First Course</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Hokkaido Scallop</div>
-                        <div class="item-desc">Cauliflower purée, golden raisins, brown butter emulsion, hazelnut crumble</div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Crispy Calamari</h3>
+                        <p>Lightly fried squid served with lemon aioli and spicy marinara</p>
                     </div>
+                    <span class="item-price">$14</span>
                 </div>
-                
-                <div class="course">
-                    <h3>Second Course</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Heritage Beet Salad</div>
-                        <div class="item-desc">Rainbow beets, goat cheese mousse, pistachio, blood orange gel</div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Beetroot Carpaccio</h3>
+                        <p>Thinly sliced roasted beets with goat cheese, walnuts, and balsamic glaze</p>
                     </div>
+                    <span class="item-price">$13</span>
                 </div>
-                
-                <div class="course">
-                    <h3>Third Course</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Handmade Pappardelle</div>
-                        <div class="item-desc">Wild boar ragù, pecorino romano, black truffle</div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Truffle Arancini</h3>
+                        <p>Crispy risotto balls with black truffle and mozzarella center</p>
                     </div>
-                </div>
-                
-                <div class="course">
-                    <h3>Fourth Course</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Dayboat Halibut</div>
-                        <div class="item-desc">Saffron fumet, fennel confit, mussels, fingerling potatoes</div>
-                    </div>
-                </div>
-                
-                <div class="course">
-                    <h3>Fifth Course</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Dry-Aged Duck Breast</div>
-                        <div class="item-desc">Cherry mostarda, roasted sunchokes, duck jus</div>
-                    </div>
-                </div>
-                
-                <div class="course">
-                    <h3>Palate Cleanser</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Lemon Verbena Sorbet</div>
-                        <div class="item-desc">Elderflower syrup, bee pollen</div>
-                    </div>
-                </div>
-                
-                <div class="course">
-                    <h3>Dessert</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Chocolate Soufflé</div>
-                        <div class="item-desc">Valrhona chocolate, crème anglaise, salted caramel ice cream</div>
-                    </div>
-                </div>
-                
-                <div class="course">
-                    <h3>Mignardises</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Petit Fours</div>
-                        <div class="item-desc">Selection of house-made chocolates and confections</div>
-                    </div>
+                    <span class="item-price">$15</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- À La Carte Menu Section -->
-    <section id="a-la-carte" class="menu-section">
+    <!-- Main Courses Section -->
+    <section class="menu-section" id="mains">
         <div class="container">
-            <div class="menu-intro">
-                <h2>À La <span>Carte</span></h2>
-                <p>Available Tuesday-Thursday evenings and for lunch Friday-Sunday</p>
-            </div>
-            
-            <div class="menu-courses">
-                <div class="course">
-                    <h3>Starters</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Foie Gras Torchon</div>
-                        <div class="item-desc">Brioche toast, quince jam, fleur de sel</div>
-                        <div class="item-price">$32</div>
+            <h2>Main Courses</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with lemon butter sauce, served with seasonal vegetables</p>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-name">Hamachi Crudo</div>
-                        <div class="item-desc">Yuzu kosho, avocado, crispy shallots</div>
-                        <div class="item-price">$24</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-name">Heirloom Tomato Salad</div>
-                        <div class="item-desc">Burrata, basil oil, aged balsamic</div>
-                        <div class="item-price">$18</div>
-                    </div>
+                    <span class="item-price">$28</span>
                 </div>
-                
-                <div class="course">
-                    <h3>Pasta</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Black Truffle Risotto</div>
-                        <div class="item-desc">Arborio rice, parmigiano-reggiano, white truffle oil</div>
-                        <div class="item-price">$38</div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Beef Tenderloin</h3>
+                        <p>8oz grass-fed beef with truffle mashed potatoes and red wine reduction</p>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-name">Lobster Ravioli</div>
-                        <div class="item-desc">Tarragon butter sauce, chives</div>
-                        <div class="item-price">$42</div>
-                    </div>
+                    <span class="item-price">$34</span>
                 </div>
-                
-                <div class="course">
-                    <h3>Main Courses</h3>
-                    <div class="menu-item">
-                        <div class="item-name">Filet Mignon</div>
-                        <div class="item-desc">8oz grass-fed beef, potato purée, seasonal vegetables, red wine reduction</div>
-                        <div class="item-price">$58</div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Mushroom Risotto</h3>
+                        <p>Creamy arborio rice with wild mushrooms, white wine, and parmesan</p>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-name">Pan-Seared Branzino</div>
-                        <div class="item-desc">Lemon beurre blanc, haricots verts, almond gremolata</div>
-                        <div class="item-price">$46</div>
+                    <span class="item-price">$24</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Herb-Crusted Rack of Lamb</h3>
+                        <p>New Zealand lamb with rosemary jus and roasted root vegetables</p>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-name">Vegetable Tasting</div>
-                        <div class="item-desc">Seasonal vegetable preparations, herb emulsion</div>
-                        <div class="item-price">$36</div>
+                    <span class="item-price">$36</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Pan-Seared Duck Breast</h3>
+                        <p>With cherry reduction, sweet potato puree, and sautéed greens</p>
                     </div>
+                    <span class="item-price">$32</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Wine Pairing Section -->
-    <section id="wine" class="menu-section">
+    <!-- Desserts Section -->
+    <section class="menu-section" id="desserts">
         <div class="container">
-            <div class="menu-intro">
-                <h2>Wine <span>Pairings</span></h2>
-                <p>Curated by our Master Sommelier to complement each course</p>
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Chocolate Fondant</h3>
+                        <p>Warm chocolate cake with molten center, served with vanilla ice cream</p>
+                    </div>
+                    <span class="item-price">$10</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Crème Brûlée</h3>
+                        <p>Classic vanilla bean custard with caramelized sugar crust</p>
+                    </div>
+                    <span class="item-price">$9</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Seasonal Fruit Tart</h3>
+                        <p>Buttery pastry with pastry cream and fresh seasonal fruits</p>
+                    </div>
+                    <span class="item-price">$11</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Cheese Platter</h3>
+                        <p>Selection of artisanal cheeses with fruit compote and crackers</p>
+                    </div>
+                    <span class="item-price">$14</span>
+                </div>
             </div>
-            
-            <div class="wine-pairings">
-                <div class="wine-category">
-                    <h3>By the Glass</h3>
-                    <div class="wine-item">
-                        <div class="wine-name">Champagne, Ruinart Blanc de Blancs</div>
-                        <div class="wine-region">France, NV</div>
-                        <div class="wine-price">$28</div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="menu-section" id="drinks">
+        <div class="container">
+            <h2>Drinks</h2>
+            <div class="menu-subsection">
+                <h3>Cocktails</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>LightWeight Spritz</h3>
+                            <p>Aperol, prosecco, soda water, orange slice</p>
+                        </div>
+                        <span class="item-price">$12</span>
                     </div>
-                    <div class="wine-item">
-                        <div class="wine-name">Chardonnay, Kistler</div>
-                        <div class="wine-region">Sonoma Coast, 2018</div>
-                        <div class="wine-price">$22</div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Elderflower Martini</h3>
+                            <p>Gin, St. Germain, lime juice, cucumber</p>
+                        </div>
+                        <span class="item-price">$14</span>
                     </div>
-                    <div class="wine-item">
-                        <div class="wine-name">Pinot Noir, Domaine Dujac</div>
-                        <div class="wine-region">Burgundy, 2016</div>
-                        <div class="wine-price">$35</div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Smoked Old Fashioned</h3>
+                            <p>Bourbon, demerara syrup, angostura bitters, smoked</p>
+                        </div>
+                        <span class="item-price">$15</span>
                     </div>
                 </div>
-                
-                <div class="wine-category">
-                    <h3>Tasting Menu Pairings</h3>
-                    <div class="wine-item">
-                        <div class="wine-name">Full Pairing</div>
-                        <div class="wine-desc">7 wines selected to accompany each course</div>
-                        <div class="wine-price">$90</div>
+            </div>
+            <div class="menu-subsection">
+                <h3>Non-Alcoholic</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>House Lemonade</h3>
+                            <p>Freshly squeezed with mint and berries</p>
+                        </div>
+                        <span class="item-price">$6</span>
                     </div>
-                    <div class="wine-item">
-                        <div class="wine-name">Premium Pairing</div>
-                        <div class="wine-desc">Rare and exceptional selections</div>
-                        <div class="wine-price">$150</div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Iced Tea</h3>
+                            <p>Brewed daily with seasonal flavors</p>
+                        </div>
+                        <span class="item-price">$5</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Sparkling Infusions</h3>
+                            <p>Sparkling water with fruit and herb infusions</p>
+                        </div>
+                        <span class="item-price">$7</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dessert Menu Section -->
-    <section id="dessert" class="menu-section">
+    <!-- Wine List Section -->
+    <section class="menu-section" id="wines">
         <div class="container">
-            <div class="menu-intro">
-                <h2>Desserts & <span>Digestifs</span></h2>
-                <p>Sweet endings to your Lumière experience</p>
-            </div>
-            
-            <div class="menu-courses">
-                <div class="course">
-                    <h3>Desserts</h3>
+            <h2>Wine List</h2>
+            <div class="menu-subsection">
+                <h3>Sparkling</h3>
+                <div class="menu-items">
                     <div class="menu-item">
-                        <div class="item-name">Chocolate Soufflé</div>
-                        <div class="item-desc">Warm Valrhona chocolate, crème anglaise</div>
-                        <div class="item-price">$16</div>
+                        <div class="item-info">
+                            <h3>Prosecco, La Marca</h3>
+                            <p>Italy, NV</p>
+                        </div>
+                        <span class="item-price">$12/glass</span>
                     </div>
                     <div class="menu-item">
-                        <div class="item-name">Seasonal Fruit Tart</div>
-                        <div class="item-desc">Vanilla bean pastry cream, almond crust</div>
-                        <div class="item-price">$14</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-name">Artisanal Cheese Selection</div>
-                        <div class="item-desc">Accompanied by honey, nuts, and fruit bread</div>
-                        <div class="item-price">$18</div>
+                        <div class="item-info">
+                            <h3>Champagne, Moët & Chandon</h3>
+                            <p>France, NV</p>
+                        </div>
+                        <span class="item-price">$25/glass</span>
                     </div>
                 </div>
-                
-                <div class="course">
-                    <h3>After Dinner Drinks</h3>
+            </div>
+            <div class="menu-subsection">
+                <h3>White</h3>
+                <div class="menu-items">
                     <div class="menu-item">
-                        <div class="item-name">Armagnac, Darroze 20 Year</div>
-                        <div class="item-price">$28</div>
+                        <div class="item-info">
+                            <h3>Sauvignon Blanc, Cloudy Bay</h3>
+                            <p>New Zealand, 2021</p>
+                        </div>
+                        <span class="item-price">$14/glass</span>
                     </div>
                     <div class="menu-item">
-                        <div class="item-name">Port, Graham's Vintage</div>
-                        <div class="item-price">$22</div>
+                        <div class="item-info">
+                            <h3>Chardonnay, Rombauer</h3>
+                            <p>California, 2020</p>
+                        </div>
+                        <span class="item-price">$16/glass</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-subsection">
+                <h3>Red</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pinot Noir, Belle Glos</h3>
+                            <p>California, 2019</p>
+                        </div>
+                        <span class="item-price">$16/glass</span>
                     </div>
                     <div class="menu-item">
-                        <div class="item-name">Espresso / Cappuccino</div>
-                        <div class="item-price">$6</div>
+                        <div class="item-info">
+                            <h3>Cabernet Sauvignon, Caymus</h3>
+                            <p>California, 2018</p>
+                        </div>
+                        <span class="item-price">$18/glass</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dietary Notice -->
-    <section class="dietary-notice">
+    <!-- Call to Action -->
+    <section class="menu-cta">
         <div class="container">
-            <div class="notice-content">
-                <i class="fas fa-allergies"></i>
-                <h3>Dietary Restrictions</h3>
-                <p>We accommodate most dietary needs with advance notice. Please inform us of any allergies or restrictions when making your reservation.</p>
-            </div>
+            <h2>Ready to Experience LightWeight?</h2>
+            <a href="reservations.html" class="btn btn-primary">Make a Reservation</a>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-info">
-                <h2>Find <span>Us</span></h2>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Gastronomy Way<br>New York, NY 10001</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <p>(212) 555-7878</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>reservations@lumiere.com</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-clock"></i>
-                    <p>Tuesday - Sunday<br>5:30 PM - 11:00 PM</p>
-                </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209179051!2d-73.9878449241646!3d40.74844097138958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot Button -->
-    <div class="chatbot-btn" id="chatbotBtn">
-        <i class="fas fa-comment-dots"></i>
-    </div>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254799250399" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Chatbot Container -->
-    <div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-container">
         <div class="chatbot-header">
-            <h3>Lumière Assistant</h3>
-            <button class="close-chatbot" id="closeChatbot">&times;</button>
+            <h3>LightWeight Assistant</h3>
+            <button class="close-chatbot">&times;</button>
         </div>
-        <div class="chatbot-messages" id="chatbotMessages">
-            <div class="chatbot-message bot-message">
-                <p>Hello! I'm your Lumière dining assistant. How can I help you today?</p>
-            </div>
-        </div>
+        <div class="chatbot-messages"></div>
         <div class="chatbot-input">
-            <input type="text" id="userInput" placeholder="Type your message...">
-            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            <input type="text" placeholder="Ask me anything about our menu...">
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+    </button>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h4>Lumière</h4>
-                    <p>Where culinary artistry meets intimate ambiance. Experience the harmony of flavors that tell a story.</p>
+                    <h3>LightWeight</h3>
+                    <p>Culinary excellence meets comfort in our modern, inviting restaurant. We're committed to providing unforgettable dining experiences.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="bookings.html">Reservations</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h3>Opening Hours</h3>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Accessibility</a></li>
+                        <li>Monday - Friday: 11:00 AM - 11:00 PM</li>
+                        <li>Saturday: 10:00 AM - 12:00 AM</li>
+                        <li>Sunday: 10:00 AM - 10:00 PM</li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for exclusive offers and updates</p>
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on special offers and events.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Your email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Lumière Restaurant. All rights reserved.</p>
+                <p>&copy; 2023 LightWeight Restaurant. All rights reserved.</p>
             </div>
         </div>
     </footer>
